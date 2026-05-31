@@ -103,6 +103,9 @@ dash.innerHTML=
 bch+
 '</div>'+
 '<div class="card c3"><h2>北向资金</h2><div class="kpi" style="text-align:center"><div class="val '+(nbNet!=null&&nbNet>0?"up":"down")+'" style="font-size:24px">'+(nbNet!=null?F(nbNet,1)+"亿":"-")+'</div><div class="lbl">净流入</div></div>'+nbExtra+'</div>'+
+'<div class="card c3"><h2>两市成交</h2><div class="kpi-row">'+
+'<div class="kpi"><div class="val" style="font-size:16px">'+(idx["000001.SH"]&&idx["000001.SH"].amount>1e8?F(idx["000001.SH"].amount/1e8,0)+"亿":"-")+'</div><div class="lbl">沪市</div></div>'+
+'<div class="kpi"><div class="val" style="font-size:16px">'+(idx["399001.SZ"]&&idx["399001.SZ"].amount>1e8?F(idx["399001.SZ"].amount/1e8,0)+"亿":"-")+'</div><div class="lbl">深市</div></div></div></div>'+
 '<div class="card c3"><h2>两融</h2><div class="kpi" style="text-align:center"><div class="val" style="font-size:20px">'+(mg.rzye!=null?F(mg.rzye,0)+"亿":"-")+'</div><div class="lbl">融资余额</div></div></div>'+
 '<div class="card c12"><h2>涨跌分布与风格</h2><div class="kpi-row">'+
 '<div class="kpi"><div class="val up">'+F(b.up)+'</div><div class="lbl">上涨</div></div>'+
