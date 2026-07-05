@@ -158,14 +158,7 @@ try{R(K[K.length-1])}catch(e){dash.innerHTML='<div class="card c12" style="color
       '<div style="font-size:10px;color:#8b949e;margin-top:4px">RPS=20日涨幅百分位排名</div>';
     var grid=document.getElementById('dash');
     if(!el.parentNode&&grid){
-      var cards=grid.querySelectorAll('.card');
-      for(var i=0;i<cards.length;i++){
-        if(cards[i].textContent.indexOf('同花顺概念打分')>=0){
-          cards[i].parentNode.insertBefore(el,cards[i].nextSibling);
-          break;
-        }
-      }
-      if(!el.parentNode)grid.appendChild(el);
+      grid.appendChild(el);
     }
   }
   renderSW(document.getElementById('dsel').value);
